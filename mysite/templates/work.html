@@ -1,0 +1,112 @@
+<!-- MySite/templates/projects.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ericnana</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+        <link type="text/css" rel="stylesheet" href="file:///home/enwc/Django/myapp/mysite/static/css/style.css"/>
+        <link rel="shortcut icon" type="image/png" href="{% static 'logo_for_projects.png' %}?ver=2"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+<style>
+
+       .bg-4 {
+             position: fixed;
+             bottom: 0;
+             width: 100%;
+             padding: 30px 25px;
+             background-color: #f5f5f5;
+        }
+
+         body, html {
+           height: 100%;
+
+             /* The image used */
+               <!--background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(3).jpg");-->
+               <!--background-image: url("https://www.w3schools.com/Css/img_lights.jpg");-->
+             /* Full height */
+           height: 100%;
+
+             /* Center and scale the image nicely */
+           background-position: auto;
+           background-repeat: no-repeat;
+           background-size: cover;
+           <!--background-color:"#111111";-->
+           position: relative;
+           scroll-behavior: smooth;
+        }
+
+
+        .a {
+             text-align: center;
+              margin: auto;
+              width: 60%;
+              <!--border: 3px solid #73AD21;-->
+              padding: 10px;
+         }
+
+
+         .b {
+            text-align: center;
+         }
+
+         table.borderless td,table.borderless th{
+         border: none !important;
+        text-align: center;
+         }
+
+	#work-section {
+
+	}
+
+
+
+
+    </style>	
+      
+    <body>
+
+	         <body data-spy="scroll" data-target=".navbar" data-offset="">
+
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">
+
+                <ul class="navbar-nav">
+                        <div class="navbar-header">
+                        <a class="navbar-brand" href="/home/#"><img src="{% static "logo_for_projects.png" %}" alt=""/></a>&nbsp&nbsp&nbsp
+                        </div>
+
+                        <li class="nav-item">
+                                <a class="nav-link"  href="/home/#">HOME</a>
+                        </li>
+
+                        <!--nav-item instead of nav-item dropdown bg-info" add to <a></a>id="navbardrop"  data-toggle="dropdown"-->
+                        <li class="nav-item">
+                           <a class="nav-link"  href="#work-section">WORK</a>&nbsp
+                        <!--<div class="dropdown-menu bg-info">
+                           <a class="dropdown-item nav-link" href="/work/ai/">AI</a>
+                           <a class="dropdown-item nav-link" href="/work/machinelearning/">Machine Learning</a>
+                           <a class="dropdown-item nav-link" href="/work/deeplearning/">Deep Learning</a>
+                        </div>-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact/">CONTACT</a>
+                        </li>
+
+                </ul>
+        </nav>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+    
+
+	   <footer class="container-fluid bg-4">
+	      <p>© Copyright 2019<a  href="/impressum" style="text-decoration: none;float:right;margin-right: 10px;"><font color="black">Impressum</font></a></p>
+
+    </body>
+</html>
+

@@ -1,0 +1,289 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>naiwe!</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+        <link type="text/css" rel="stylesheet" href="file:///home/enwc/Django/myapp/mysite/static/css/style.css"/>
+	<link rel="shortcut icon" type="image/jpg" href="{% static 'firstlogo.jpg' %}?ver=2"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">      
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+        <style>
+	  /* Make the image fully responsive */
+  	.carousel-inner img {
+      		width: auto;
+      		height: auto;
+		margin: auto;
+		position: relative;
+  	}
+
+
+	.center {
+ 		 display: block;
+ 		 margin-left: auto;
+    		 margin-right: auto;
+		 width: 25%;
+	}
+
+
+         .jumbotron {
+             background-color: #f6f6f6;
+             color: #fff;
+             padding: 30px 25px;
+             background-attachment: fixed;
+             background-size: auto;
+             background-repeat: no-repeat;
+             width: 100%;
+        }
+
+        .bg-grey {
+             background-color: #f6f6f6;
+             color: #fff;
+             padding: 50px 25px;           
+        }
+
+	bg-secondary{
+   	     width: 100%;
+	     position: relative;
+        }
+
+        .bg-4 { 
+             position:none;
+             bottom: 0;
+             width: 100%;
+             padding: 30px 25px;
+             background-color: #f5f5f5;
+             font-size: 15px;
+        }
+        
+        body, html {
+           height: 100%;
+        
+             /* The image used */
+               <!--background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(3).jpg");-->
+               <!--background-image: url("https://www.w3schools.com/Css/img_lights.jpg");-->
+             /* Full height */
+           height: 100%;
+
+             /* Center and scale the image nicely */
+           background-position: auto;
+           background-repeat: no-repeat;
+           background-size: cover;
+	   position: relative;
+        }
+
+        <!--.dropdown-menu a:hover {background-color: grey;}
+        .dropdown:hover .dropdown-menu {display: block;}
+        #navbardrop:hover .dropdown-menu {display: block;}-->
+
+
+
+
+	#menu ul {
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	margin: 10;
+	padding: 0;
+	list-style: none;
+	}
+	#menu li {
+	display: inline-block;
+	}
+	#menu ul li {
+	display: block;	
+	position: relative;
+	float: left;
+	}
+	#menu li ul {
+	display: none;
+	}
+	#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	border-top: 1px solid #ffffff;
+	padding: 5px 15px 5px 15px;
+	background: #1e7c9a;
+	margin-left: 1px;
+	white-space: nowrap;
+	}
+	#menu ul li a:hover {
+	background: #808080;
+	}
+	#menu li:hover ul {
+	display: block;
+	position: absolute;
+	}
+	#menu li:hover li {
+	float: none;
+	font-size: 11px;
+	}
+	#menu li:hover a { background: #808080; }
+	#menu li:hover li a:hover {
+	background: #1e7c9a;
+	}
+
+
+        .dropdown-menu a:hover {background-color: grey; position: relative;}
+        .nav-item:hover .dropdown-menu {display: block;}
+        .nav-item:hover #navbardrop {background-color: none; position: relative;}   
+                      
+
+
+
+       </style>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+ 	<nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">  
+	        
+  		<ul class="navbar-nav">
+                	<div class="navbar-header">
+                      	<a class="navbar-brand" href="#">WebSiteLOGO</a>&nbsp&nbsp&nbsp
+                	</div>
+
+    			<li class="nav-item">
+      				<a class="nav-link" href="/home/#">HOME</a>
+    			</li>
+    			<li class="nav-item dropdown">
+      			   <!--<a class="nav-link dropdown-toggle" href="/home/#" id="navbardrop" data-toggle="dropdown">-->
+                           <a class="nav-link" href="/home/#" id="navbardrop"  data-toggle="dropdown">
+        			WORK
+      			   </a>&nbsp
+      			<div class="dropdown-menu">
+        		   <a class="dropdown-item" href="/work/ai/">AI</a>
+        		   <a class="dropdown-item" href="/work/machinelearning/">Machine Learning</a>
+		           <a class="dropdown-item" href="/work/deeplearning/">Deep Learning</a>
+      			</div>
+    			</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact/">CONTACT</a>
+                        </li>
+
+  		</ul>
+	</nav>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+	<!--class="container-fluid alert alert-success" This is just for color  -->
+	<div id="home" class="container-fluid alert-primary" style="padding-top:70px;padding-bottom:70px">
+   		<!--<h1>Home</h1>
+  		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>-->
+		<p><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(3).jpg") class="center rounded"  width="auto" height="auto"></p>
+
+	</div>
+
+	<div id="#" class="container-fluid alert-primary" style="padding-top:70px;padding-bottom:70px">
+  		<!--<h1>Projects</h1>
+  		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>-->
+
+		 <p><div id="demo" class="carousel slide" data-ride="carousel">
+
+    			<ul class="carousel-indicators">
+    			<li data-target="#demo" data-slide-to="0" class="active"></li>
+    			<li data-target="#demo" data-slide-to="1"></li>
+    			<li data-target="#demo" data-slide-to="2"></li>
+  			</ul>
+  
+  
+  			<div class="carousel-inner">
+    				<div class="carousel-item active">
+      				<img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(3).jpg" class=" center rounded" width="auto" height="auto" style="width:50%;">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(2).jpg") class="center rounded" width="auto" height="auto" style="width:50%;">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(1).jpg") class="center rounded" width="auto" height="auto" style="width:50%;">
+    			</div>
+  			</div>
+  
+    			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    				<span class="carousel-control-prev-icon"></span>
+  			</a>
+  			<a class="carousel-control-next" href="#demo" data-slide="next">
+    				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div></p>
+        </div>
+
+	<div id="contact" class="container-fluid alert-primary " style="padding-top:70px;padding-bottom:70px">
+  		<!--<h1>Contact</h1>
+  		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>-->
+
+		<p><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(1).jpg") class="center rounded" width="auto" height="auto"></p>
+	</div>
+
+
+
+                   
+    <!--<div class="jumbotron text-center">
+     
+     <ul id="menu" style="text-decoration: none;float:left;margin-left: 10px;">
+     <li><a href="/home/#">HOME</a> &nbsp</li>
+
+     <li><a href="/home/#">ABOUT</a> &nbsp
+     <ul> <li><a  href="/about/aboutme/">About Me</a></li></ul>
+     </li>
+
+     <li><a href="/home/#">WORK</a> &nbsp
+     <ul>
+     <li><a  href="/work/ai/">AI</a></li>
+     <li><a  href="/work/machinelearning/">Machine Learning</a></li>
+     <li><a  href="/work/deeplearning/">Deep Learning</a></li>
+     </ul>
+     </li>
+
+     <li><a href="/contact/">CONTACT</a> &nbsp
+     <ul>
+     </ul>
+     </li>
+     </ul>
+   </div>-->
+
+   <!--<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(3).jpg" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(2).jpg") width="110" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(1).jpg") width="1100" height="500">
+    </div>
+  </div>
+  
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>-->
+     
+
+    <footer class="container-fluid bg-4">
+       <p>© Copyright 2018<a  href="/impressum" style="text-decoration: none;float:right;margin-right: 10px;"><font color="black">Impressum</font></a></p>
+    </footer>
+
+ 
+   </body>    
+</html>

@@ -1,0 +1,252 @@
+<!-- MySite/templates/contact.html -->
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ericnana</title>
+        <link type="text/css" rel="stylesheet" href="file:///home/enwc/Django/myapp/mysite/static/css/style.css"/>
+	<link rel="shortcut icon" type="image/png" href="{% static 'logo_for_projects.png' %}?ver=2"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+        <!--<link href="style.css" rel="stylesheet" type="text/css">-->
+        
+         	
+        <!--<link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>-->       
+
+      
+<style>
+
+        .jumbotron {
+             background-color: #f6f6f6;
+             position: auto;
+             color: #fff;
+             padding: 30px 25px;
+             background-attachment: fixed;
+             background-size: auto;
+             background-repeat: no-repeat;
+        }
+
+
+        .bg-4 {
+             position: fixed;
+             bottom: 0;
+             width: 100%;
+             padding: 30px 25px;
+             background-color: #0B0B3B;
+             font-size: 15px;
+        }
+
+
+        body, html {
+           height: 100%;
+
+             /* The image used */
+               <!--background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(2).jpg");-->
+               <!--background-image: url("https://www.w3schools.com/Css/img_lights.jpg");-->
+             /* Full height */
+          
+             /* Center and scale the image nicely */
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+
+        }
+             
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 1px;
+    background-color:#f2f2f2;
+    padding: -50px;
+    padding-right: 600px;
+    border: 0px;
+    box-sizing:border-size;
+    margin-top: 100px;
+    margin-bottom:20px;
+    margin-width:20px;
+    margin-left:none;
+    margin-right:none;
+    resize: auto;
+    width: 9%;
+}
+
+
+.success {
+    background:none;
+    text-align: center;
+}
+
+#id_contact_email{
+    padding:10px;
+    width: 100%;
+}
+
+.btn {
+    background-color: none;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: none;
+}
+
+        .dropdown-menu a:hover {background-color: lightgrey; position: relative;}
+        .nav-item:hover .dropdown-menu {display: block;}
+        .nav-item:hover #navbardrop {background-color: none; position: relative;}
+
+div#form {
+    border: 10px;
+    padding:10px; 
+    padding-right:-100px;
+    width: 600px;
+    resize: vertical;
+    overflow: auto; 
+    margin-bottom:none;
+    background-color:#E6E6E6;    
+}
+
+
+.home-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.work-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.contact-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+#contact-section {
+ background: #FBF8EF;
+}
+
+
+
+
+
+</style>
+    </head>
+
+    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">
+
+                <ul class="navbar-nav">
+                        <div class="navbar-header">
+                        <a class="navbar-brand" href="/home/#"><img src="{% static "logo_for_projects.png" %}" alt=""/></a>&nbsp&nbsp&nbsp
+                        </div>
+
+                        <li class="nav-item">
+                                <a class="nav-link home-header" href="/home/#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                           
+                           <a class="nav-link work-header" href="/work/#work-section"">WORK</a>&nbsp
+                        <!--<div class="dropdown-menu bg-info">
+                           <a class="dropdown-item nav-link" href="/work/ai/">AI</a>
+                           <a class="dropdown-item nav-link" href="/work/machinelearning/">Machine Learning</a>
+                           <a class="dropdown-item nav-link" href="/work/deeplearning/">Deep Learning</a>
+                        </div>-->
+                        </li>
+                        <li class="nav-item contact-header">
+                            <a class="nav-link" href="/contact/">CONTACT</a>
+                        </li>
+
+                </ul>
+        </nav>
+       
+     
+      		<!--{% if messages %}
+      			<div class='col-xs-12'>
+      
+      		{% for message in messages %}
+     			<p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+      		{% endfor %}
+      			</div>
+     		{% endif %}-->
+       
+    	<div class="container-fluid contact-section" style="padding-top:200px;padding-bottom:200px">
+          
+	        <div  id="form" class="container-fluid" style="padding-top:0px;padding-bottom:70px">
+          
+	  <form action="" id="form" name="form" method="post" style="padding-top:0px;padding-bottom:70px">
+                {% if messages %}
+                        <div class='col-xs-12'>
+
+                {% for message in messages %}
+                        <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+                {% endfor %}
+                        </div>
+                {% endif %}
+      
+
+
+
+   		{% csrf_token %}
+   		{{ form.as_p }}
+      
+  		  <button type="submit" id="popup" class="submit">Submit</button>&nbsp&nbsp&nbsp
+  
+    			<!--<a href="/" style="text-decoration: none;float:right;margin-right: 10px;"><font color="black"><i class="fa fa-home"></i></font></a>-->
+	  </form>
+		</div>
+
+	</div>
+
+
+
+
+
+
+	
+   <footer class="container-fluid bg-4">
+      <p><font color="white">© Copyright 2019</font><a  href="/impressum" style="text-decoration: none;float:right;margin-right: 10px;"><font color="white">Impressum</font></a></p>
+    </footer>
+
+    
+    </body>
+</html>
+
