@@ -25,8 +25,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'obqlyxn-+7-p(9dl(eo7lr7xlu$xdxofy**8nlcr2as3%@+$@v'
-#SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'obqlyxn-+7-p(9dl(eo7lr7xlu$xdxofy**8nlcr2as3%@+$@v')
+SECRET_KEY = 'YOUR SECRET KEY'
+#SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'YOUR SECRET KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -68,14 +68,14 @@ MIDDLEWARE = [
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
-EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST = 'smtp.HOST'
 #DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST_USER = 'enwc'
-EMAIL_HOST_PASSWORD = 'Sengrid@x_x2x_x'
+EMAIL_HOST_USER = 'USER'
+EMAIL_HOST_PASSWORD = 'YOUR PASSWORD'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'ericnana@mail.com'
-ADMINS = [('Eric Nana', 'ericnana@mail.com')]
+DEFAULT_FROM_EMAIL = 'YOUR EMAIL'
+ADMINS = [('USER', 'YOUR EMAIL')]
 
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
@@ -179,9 +179,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'YOUR PREFERED LANGUAGE'
 
-TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'AREA TIME ZONE'
 
 USE_I18N = True
 

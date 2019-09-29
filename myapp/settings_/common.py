@@ -16,7 +16,7 @@ from django.contrib.messages import constants as messages
 
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_HSTS_SECONDS = 86400  # 1 day
@@ -32,8 +32,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'obqlyxn-+7-p(9dl(eo7lr7xlu$xdxofy**8nlcr2as3%@+$@v'
-#SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'obqlyxn-+7-p(9dl(eo7lr7xlu$xdxofy**8nlcr2as3%@+$@v')
+SECRET_KEY = 'YOUR SECRET KEY'
+#SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'YOUR SECRET KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -77,12 +77,16 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
 #DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST_USER = 'enwc'
-EMAIL_HOST_PASSWORD = 'Sengrid@x_x2x_x'
+#Enter your initials as user at your host
+EMAIL_HOST_USER = 'YOU AS USER AT YOUR HOST'
+#Enter the password  at your host
+EMAIL_HOST_PASSWORD = 'YOUR PASSWORD AT YOUR HOST'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'ericnana@mail.com'
-ADMINS = [('Eric Nana', 'ericnana@mail.com')]
+#Enter the Email at your host
+DEFAULT_FROM_EMAIL = 'YOUR Email AT YOUR HOST'
+#Enter the user and Email at your host
+ADMINS = [('USER', 'YOUR Email AT YOUR HOST')]
 
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
